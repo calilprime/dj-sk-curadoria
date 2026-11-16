@@ -1,0 +1,23 @@
+# Versões exatas de tudo (inclusive dependências): requirements-freeze.txt
+# Núcleo
+streamlit==1.66.1     # usa st.button(shortcut=...), st.html e st.container(key=...) desta versão
+altair>=6.0           # gráficos do setlist e das métricas (importado direto pelo app)
+pandas>=2.2
+ytmusicapi>=1.10
+yt-dlp>=2026.10.21
+librosa>=0.11
+numpy>=2.0
+soundfile>=0.12
+replicate>=1.0
+requests>=2.32
+python-dotenv>=1.0
+truststore>=0.10      # usa os certificados do Windows (necessário com antivírus/proxy que intercepta HTTPS)
+mutagen>=1.47         # tags ID3 nos mp3 exportados e duração de arquivos locais
+
+# Opcionais
+spotipy>=2.25         # Spotify: buscar referências, importar playlist e criar playlist com o set
+google-genai>=1.0     # explicação das transições com Gemini (4.11)
+
+# Desenvolvimento
+pytest>=8.0
+fpdf2>=2.8            # gera os PDFs de guia e roteiro

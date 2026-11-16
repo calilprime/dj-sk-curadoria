@@ -1,0 +1,42 @@
+# Configuração do Streamlit para o painel local do DJ SK.
+
+[browser]
+# Não envia estatísticas de uso para o Streamlit.
+gatherUsageStats = false
+
+[server]
+# Abre o navegador ao rodar `streamlit run app.py`.
+headless = false
+runOnSave = false
+# Sem observador de arquivos: gravar mp3/JSON no cache não pode disparar um rerun.
+fileWatcherType = "none"
+# maxUploadSize: mantém o padrão do Streamlit (200 MB).
+
+[theme]
+# Tema escuro de "app de DJ": rosa #FF3D7F + roxo #7C5CFF (mesmas cores de modules/theme.py).
+# As fontes Inter / Space Grotesk são carregadas pelo CSS do painel (theme.inject_css);
+# sem internet, caem nas fontes do sistema da lista.
+base = "dark"
+primaryColor = "#FF3D7F"
+backgroundColor = "#0B0B12"
+secondaryBackgroundColor = "#1A1A28"
+textColor = "#F3F3F8"
+linkColor = "#FF7AA8"
+borderColor = "#2A2A3D"
+showWidgetBorder = true
+baseRadius = "0.75rem"
+buttonRadius = "0.7rem"
+font = "Inter, 'Segoe UI', system-ui, sans-serif"
+headingFont = "'Space Grotesk', 'Segoe UI', system-ui, sans-serif"
+headingFontWeights = [700, 700, 600, 600, 600, 600]
+metricValueFontWeight = 700
+greenColor = "#22C55E"
+redColor = "#EF4444"
+orangeColor = "#F59E0B"
+violetColor = "#7C5CFF"
+blueColor = "#38BDF8"
+chartCategoricalColors = ["#FF3D7F", "#7C5CFF", "#14B8A6", "#F59E0B", "#38BDF8", "#22C55E", "#EF4444"]
+
+[theme.sidebar]
+backgroundColor = "#11111A"
+secondaryBackgroundColor = "#1A1A28"

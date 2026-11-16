@@ -1,0 +1,23 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+cache/
+stems/
+Setlist_Atual/
+data/
+.cache*
+cookies.txt
+Setlists/
+
+# Nunca publicar: sessão do YouTube e áudios (direitos autorais)
+cookies.txt
+*cookies*.txt
+Setlists/
+.streamlit/secrets.toml
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.webm
